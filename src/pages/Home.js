@@ -28,9 +28,9 @@ function Home() {
         };
         axios.request(options)
             .then(response => {
-                console.log(response.data, JSON.stringify(response));
+                // console.log(response.data, JSON.stringify(response));
                 setloading(false)
-                localStorage.setItem("movieData", JSON.stringify(response.data))
+                // localStorage.setItem("movieData", JSON.stringify(response.data))
                 setData(response.data)
             })
             .catch(error => {
@@ -48,10 +48,8 @@ function Home() {
 
     }) 
     let movieData = filtersValue?.fitlersValue?.genre || filtersValue?.fitlersValue?.filterby ? filterData : pathname == "/all-movies" ? data : data?.slice(0, 8)
-
-    // console.log(movieData  ,filtersValue?.fitlersValue,"<<<<<<<<");
     useEffect(() => {
-        // fetchMovieData()
+        fetchMovieData()
     }, [])
     return (
         <Layout>

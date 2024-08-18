@@ -524,7 +524,7 @@ color: #e30613;
 
 .search_dev{
     position: relative;
-    width: 350px;
+    /* width: 350px; */
     display: flex;
 }
 .search_dev button {
@@ -549,18 +549,6 @@ color: #e30613;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
